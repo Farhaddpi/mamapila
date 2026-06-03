@@ -1,5 +1,9 @@
-const loader=document.getElementById('loader');window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hide'),650));
-const reveals=document.querySelectorAll('.reveal');const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.12});reveals.forEach(el=>io.observe(el));
-const langBtn=document.getElementById('langBtn');let fa=false;function setLang(){document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=fa?el.dataset.fa:el.dataset.en});document.documentElement.lang=fa?'fa':'en';document.body.classList.toggle('fa-mode',fa);langBtn.textContent=fa?'EN':'FA'}langBtn.addEventListener('click',()=>{fa=!fa;setLang()});
-document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{const v=document.querySelector('.product-media video');v.poster=img.src;v.scrollIntoView({behavior:'smooth',block:'center'});}));
-window.addEventListener('scroll',()=>{const y=window.scrollY;document.querySelector('.persian-arch')?.style.setProperty('transform',`translateY(${y*.05}px)`)});
+window.addEventListener('load',()=>document.querySelector('.loader').classList.add('hide'));
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+let fa=false;const btn=document.getElementById('langBtn');
+function switchLang(){fa=!fa;document.body.classList.toggle('fa-mode',fa);document.documentElement.lang=fa?'fa':'en';document.documentElement.dir=fa?'rtl':'ltr';btn.textContent=fa?'EN':'FA';document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=fa?el.dataset.fa:el.dataset.en});}
+btn.addEventListener('click',switchLang);
+const modal=document.getElementById('videoModal'),video=document.getElementById('modalVideo');
+document.querySelectorAll('.play').forEach(b=>b.addEventListener('click',()=>{video.src=b.dataset.video;modal.classList.add('show');video.play()}));
+document.getElementById('closeModal').addEventListener('click',()=>{video.pause();video.src='';modal.classList.remove('show')});
