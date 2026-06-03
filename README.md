@@ -1,21 +1,19 @@
-# Mama Pila Website v4
+Mama Pila Website V5
 
-Static GitHub Pages website.
+Upload the CONTENTS of this folder directly into your GitHub repository root:
 
-## Upload to GitHub
-Upload the contents of this folder to your `mamapila` repository root:
-- index.html
-- styles.css
-- script.js
-- assets folder
+index.html
+styles.css
+script.js
+assets/
 
-Do not upload the ZIP itself.
+Do not upload the zip file itself and do not upload a parent folder.
 
-## Preview
-After commit, wait 1–5 minutes and open:
+GitHub Pages URL:
 https://farhaddpi.github.io/mamapila/
 
-## Notes
-- Product image with hand is included as `product-original.jpg`.
-- Cropped cleaner product image is `product-clean.jpg`.
-- Videos are renamed to simple paths so GitHub Pages can play them correctly.
+If images/videos do not load, check that the repository has:
+assets/kotlet-video-1.mp4
+assets/kotlet-video-2.mp4
+assets/product-pack-clean.jpg
+assets/logo-label-small.jpg
