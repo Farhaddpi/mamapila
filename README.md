@@ -1,18 +1,22 @@
-# Mama Pila Website
+# Mama Pila Website v3
 
-Static landing website for mamapila.ca. Built with HTML, CSS, and JavaScript for GitHub Pages.
+Premium GitHub Pages website for Mama Pila.
 
-## Edit
+## Upload to GitHub
+1. Extract this ZIP.
+2. Open your `mamapila` GitHub repository.
+3. Click **Add file > Upload files**.
+4. Upload all extracted files and folders, not the ZIP itself.
+5. Commit changes.
+6. Wait 1–5 minutes and refresh: https://farhaddpi.github.io/mamapila/
+
+## Edit later
 - Main content: `index.html`
-- Design: `styles.css`
-- Animation: `script.js`
-- Image: `assets/mamapila-label.png`
+- Design/colors/fonts/animations: `styles.css`
+- Language switch and animations: `script.js`
+- Images/videos: `assets/`
 
-## Deploy to GitHub Pages
-1. Create a new GitHub repository named `mamapila` or `mamapila.ca`.
-2. Upload all files in this folder, not the folder itself.
-3. Go to **Settings > Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch **main** and folder **/root**.
-6. Save. GitHub gives you a temporary link like `https://yourusername.github.io/mamapila/`.
-7. Later, connect `mamapila.ca` from **Settings > Pages > Custom domain**.
+## Notes
+- Social links are placeholders. Replace `#` in the Contact section with real Instagram, LinkedIn, TikTok, and Facebook URLs.
+- Nutrition values are placeholders and should be updated before final launch.
+- Email currently uses `order@mampila.ca` as provided.

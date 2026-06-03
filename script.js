@@ -1,4 +1,5 @@
-document.getElementById('year').textContent=new Date().getFullYear();
-const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.13});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-document.querySelectorAll('nav a,.brand').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
+const loader=document.getElementById('loader');window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hide'),650));
+const reveals=document.querySelectorAll('.reveal');const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.12});reveals.forEach(el=>io.observe(el));
+const langBtn=document.getElementById('langBtn');let fa=false;function setLang(){document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=fa?el.dataset.fa:el.dataset.en});document.documentElement.lang=fa?'fa':'en';document.body.classList.toggle('fa-mode',fa);langBtn.textContent=fa?'EN':'FA'}langBtn.addEventListener('click',()=>{fa=!fa;setLang()});
+document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{const v=document.querySelector('.product-media video');v.poster=img.src;v.scrollIntoView({behavior:'smooth',block:'center'});}));
+window.addEventListener('scroll',()=>{const y=window.scrollY;document.querySelector('.persian-arch')?.style.setProperty('transform',`translateY(${y*.05}px)`)});

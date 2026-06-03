@@ -3,77 +3,162 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mama Pila | Persian Kotlet Made With Love</title>
-  <meta name="description" content="Mama Pila brings authentic Persian frozen kotlet, handmade in Toronto with natural ingredients and no additives." />
+  <title>Mama Pila | Persian Kotlet Toronto</title>
+  <meta name="description" content="Mama Pila makes premium frozen Persian Kotlet in Toronto using natural ingredients, family recipes, and Ontario-certified production standards." />
+  <meta name="keywords" content="Mama Pila, Persian Kotlet, Iranian frozen food, frozen kotlet Toronto, Persian cutlet Canada, kotlet Ontario" />
+  <meta property="og:title" content="Mama Pila | Persian Kotlet" />
+  <meta property="og:description" content="Traditional Persian Kotlet, made with love, frozen fresh, ready to cook." />
+  <meta property="og:image" content="assets/product-pack.jpeg" />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="grain"></div><div class="persian-border"></div>
-  <header class="site-header">
-    <a class="brand" href="#home"><span class="brand-mark">MP</span><span>Mama Pila</span></a>
-    <nav><a href="#story">Story</a><a href="#product">Product</a><a href="#quality">Quality</a><a href="#contact">Contact</a></nav>
+  <div class="loader" id="loader"><div class="seal">Mama<br>Pila</div></div>
+  <div class="grain"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/mamapila-round-label.jpeg" alt="Mama Pila logo">
+      <span>Mama Pila</span>
+    </a>
+    <nav class="navlinks">
+      <a href="#story" data-en="Story" data-fa="داستان">Story</a>
+      <a href="#why" data-en="Why Us" data-fa="چرا ما">Why Us</a>
+      <a href="#product" data-en="Product" data-fa="محصول">Product</a>
+      <a href="#contact" data-en="Contact" data-fa="تماس">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang" id="langBtn">FA</button>
+      <a class="order" href="mailto:order@mampila.ca" data-en="Order Inquiry" data-fa="درخواست سفارش">Order Inquiry</a>
+    </div>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Persian comfort food • Toronto made</p>
-        <h1>Grandmother recipes, redesigned for modern Canadian homes.</h1>
-        <p class="lead">Mama Pila is a women-owned Persian food brand created by two Iranian women in Canada. Our recipes carry the warm taste of maman and madarbozorg — prepared with care, frozen fresh, and ready for your kitchen.</p>
-        <p class="lead fa" dir="rtl">ماماپیلا طعم غذای اصیل ایرانی و دستورهای مادر‌بزرگ‌ها را با استانداردهای مدرن تولید در تورنتو به خانه‌های کانادایی می‌آورد.</p>
-        <div class="hero-actions"><a class="btn primary" href="#product">Explore Product</a><a class="btn ghost" href="#contact">Order / Wholesale</a></div>
-        <div class="trust-row"><span>Made with love</span><span>Fait avec amour</span><span>با عشق مامان</span></div>
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/product-pack.jpeg">
+        <source src="assets/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="persian-arch"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-en="Persian Kotlet • Frozen Fresh • Toronto" data-fa="کتلت ایرانی • منجمد تازه • تورنتو">Persian Kotlet • Frozen Fresh • Toronto</p>
+        <h1 data-en="A Taste of Grandma’s Kitchen" data-fa="طعم اصیل آشپزخانه مادربزرگ">A Taste of Grandma’s Kitchen</h1>
+        <p class="hero-text" data-en="Traditional Iranian comfort food, prepared from family recipes by two Iranian women in Canada, made with natural ingredients and no preservatives." data-fa="غذای اصیل و خاطره‌انگیز ایرانی، برگرفته از دستورهای خانوادگی و مادربزرگ‌ها؛ تهیه‌شده با مواد طبیعی و بدون نگهدارنده.">Traditional Iranian comfort food, prepared from family recipes by two Iranian women in Canada, made with natural ingredients and no preservatives.</p>
+        <div class="hero-buttons">
+          <a href="#product" class="btn primary" data-en="Explore Product" data-fa="مشاهده محصول">Explore Product</a>
+          <a href="#story" class="btn ghost" data-en="Our Story" data-fa="داستان ما">Our Story</a>
+        </div>
       </div>
-      <div class="hero-card reveal"><img src="assets/mamapila-label.png" alt="Mama Pila Persian Kotlet label"><div class="floating-badge">Uncooked • Frozen • 400g</div></div>
-    </section>
-
-    <section id="story" class="section story-shell">
-      <div class="ornament">✦</div>
-      <p class="eyebrow">Our story / داستان ما</p>
-      <h2>Authentic Persian flavour with a premium frozen-food experience.</h2>
-      <div class="two-lang">
-        <p>Mama Pila started with two Iranian women who spent years cooking traditional Persian food in Canada. The heart of the brand is simple: nostalgic recipes, honest ingredients, and the comforting flavour of home.</p>
-        <p dir="rtl" class="fa">ماماپیلا با تجربه‌ی دو بانوی ایرانی شکل گرفته؛ با دستورهایی الهام‌گرفته از آشپزخانه‌های قدیمی، طعم خاطره‌انگیز خانه، و غذاهایی که با عشق آماده می‌شوند.</p>
-      </div>
-    </section>
-
-    <section id="quality" class="section quality-grid">
-      <div class="quality-card reveal"><span>01</span><h3>Natural ingredients</h3><p>Prepared with carefully selected ingredients and classic Persian seasoning.</p><p class="fa" dir="rtl">تهیه‌شده با مواد اولیه طبیعی و چاشنی اصیل ایرانی.</p></div>
-      <div class="quality-card reveal"><span>02</span><h3>No additives</h3><p>No preservatives, no unnecessary additives — just simple food.</p><p class="fa" dir="rtl">بدون مواد نگهدارنده و افزودنی‌های غیرضروری.</p></div>
-      <div class="quality-card reveal"><span>03</span><h3>Licensed kitchen</h3><p>Produced in an equipped industrial kitchen in Toronto with Ontario permits.</p><p class="fa" dir="rtl">تولید در آشپزخانه صنعتی مجهز و دارای مجوز در تورنتو.</p></div>
-      <div class="quality-card reveal"><span>04</span><h3>Quality monitored</h3><p>Production, packaging, and frozen storage are monitored by a QC team.</p><p class="fa" dir="rtl">کنترل کیفیت در تولید، بسته‌بندی و نگهداری منجمد.</p></div>
-    </section>
-
-    <section id="product" class="section product-section">
-      <div class="product-info reveal">
-        <p class="eyebrow orange">Current product / محصول فعلی</p>
-        <h2>Persian Kotlet — Uncooked Frozen</h2>
-        <p>Traditional Iranian beef cutlets, raw and frozen, ready to pan-fry at home. Crispy outside, soft and flavourful inside.</p>
-        <p class="fa" dir="rtl">کتلت گوشت ایرانی، خام و منجمد، آماده برای سرخ کردن در خانه؛ ترد، خوش‌عطر و کاملاً خانگی.</p>
-        <ul class="specs"><li><b>Pieces:</b> 9 pieces</li><li><b>Net weight:</b> 400 g</li><li><b>Storage:</b> Keep frozen</li><li><b>Ingredients:</b> Beef, potato, egg, bread crumbs, salt, pepper, turmeric, garlic powder</li></ul>
-        <div class="nutrition"><h3>Nutrition facts placeholder</h3><div><span>Calories</span><b>220</b></div><div><span>Protein</span><b>14 g</b></div><div><span>Total Fat</span><b>12 g</b></div><small>Temporary sample values. Replace later.</small></div>
-      </div>
-      <div class="gallery reveal">
-        <img src="assets/kotlet-plate.svg" alt="Persian kotlet placeholder photo">
-        <img src="assets/kotlet-pack.svg" alt="Kotlet package placeholder photo">
-        <img src="assets/kotlet-cooking.svg" alt="Kotlet cooking placeholder photo">
+      <div class="hero-card reveal delay">
+        <img src="assets/product-pack.jpeg" alt="Mama Pila frozen Persian Kotlet package">
+        <div>
+          <b data-en="Uncooked Persian Kotlet" data-fa="کتلت ایرانی خام">Uncooked Persian Kotlet</b>
+          <span data-en="Keep frozen • Ready to cook" data-fa="منجمد نگهداری شود • آماده پخت">Keep frozen • Ready to cook</span>
+        </div>
       </div>
     </section>
 
-    <section class="section banner reveal"><h2>Made with love • Fait avec amour • با عشق مامان</h2><p>A modern Persian frozen-food brand built around nostalgia, quality, and flavour.</p></section>
+    <section class="marquee">
+      <div class="track">
+        <span>Made with Love</span><span>با عشق مامان</span><span>No Preservatives</span><span>تهیه شده با مواد طبیعی</span><span>Women-Owned Business</span><span>Frozen Fresh</span>
+      </div>
+    </section>
+
+    <section id="story" class="section split">
+      <div class="copy reveal">
+        <p class="eyebrow orange" data-en="Our Story" data-fa="داستان ماماپیلا">Our Story</p>
+        <h2 data-en="Recipes carried from Persian homes to Canadian tables." data-fa="دستورهایی از خانه‌های ایرانی، برای سفره‌های کانادایی.">Recipes carried from Persian homes to Canadian tables.</h2>
+        <p data-en="Mama Pila was born from years of experience, family memories, and the unforgettable taste of homemade Persian food. The brand is led by two Iranian women in Canada who believe traditional food should be honest, comforting, and made with care." data-fa="ماماپیلا از سال‌ها تجربه، خاطره‌های خانوادگی و طعم فراموش‌نشدنی غذاهای خانگی ایرانی شکل گرفته است. این برند توسط دو بانوی ایرانی در کانادا اداره می‌شود که باور دارند غذای اصیل باید سالم، صادقانه و با عشق تهیه شود.">Mama Pila was born from years of experience, family memories, and the unforgettable taste of homemade Persian food. The brand is led by two Iranian women in Canada who believe traditional food should be honest, comforting, and made with care.</p>
+        <p data-en="Every batch is produced in a modern, fully equipped industrial kitchen in Toronto under Ontario requirements. Production, packaging, and frozen storage are monitored by a quality-control team to deliver consistent flavour and safety." data-fa="هر بچ در یک آشپزخانه صنعتی مجهز و مدرن در تورنتو، مطابق الزامات قانونی انتاریو تولید می‌شود. تولید، بسته‌بندی و نگهداری منجمد زیر نظر تیم کنترل کیفیت انجام می‌شود تا محصولی خوش‌طعم، سالم و باکیفیت به بازار برسد.">Every batch is produced in a modern, fully equipped industrial kitchen in Toronto under Ontario requirements. Production, packaging, and frozen storage are monitored by a quality-control team to deliver consistent flavour and safety.</p>
+      </div>
+      <div class="image-stack reveal delay">
+        <img class="main-img" src="assets/mamapila-round-label.jpeg" alt="Mama Pila label artwork">
+        <div class="floating-note" data-en="Made with love • Fait avec amour • با عشق مامان" data-fa="با عشق مامان • Made with love • Fait avec amour">Made with love • Fait avec amour • با عشق مامان</div>
+      </div>
+    </section>
+
+    <section id="why" class="section why">
+      <div class="center reveal">
+        <p class="eyebrow orange" data-en="Why Mama Pila" data-fa="چرا ماماپیلا">Why Mama Pila</p>
+        <h2 data-en="Premium, traditional, and built for modern retail." data-fa="اصیل، باکیفیت و آماده برای بازار مدرن.">Premium, traditional, and built for modern retail.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal"><span>🌿</span><h3 data-en="Natural Ingredients" data-fa="مواد اولیه طبیعی">Natural Ingredients</h3><p data-en="Made with simple, recognizable ingredients." data-fa="تهیه‌شده با مواد اولیه ساده و قابل اعتماد.">Made with simple, recognizable ingredients.</p></article>
+        <article class="feature reveal"><span>🚫</span><h3 data-en="No Preservatives" data-fa="بدون نگهدارنده">No Preservatives</h3><p data-en="No unnecessary additives or preservatives." data-fa="بدون مواد افزودنی و نگهدارنده غیرضروری.">No unnecessary additives or preservatives.</p></article>
+        <article class="feature reveal"><span>❄️</span><h3 data-en="Frozen Fresh" data-fa="منجمد تازه">Frozen Fresh</h3><p data-en="Designed for freshness, convenience, and consistent quality." data-fa="برای تازگی، راحتی و کیفیت ثابت طراحی شده است.">Designed for freshness, convenience, and consistent quality.</p></article>
+        <article class="feature reveal"><span>🏭</span><h3 data-en="Ontario Facility" data-fa="تولید در انتاریو">Ontario Facility</h3><p data-en="Produced in a professional industrial kitchen in Toronto." data-fa="تولید در آشپزخانه صنعتی حرفه‌ای در تورنتو.">Produced in a professional industrial kitchen in Toronto.</p></article>
+        <article class="feature reveal"><span>🧪</span><h3 data-en="Quality Controlled" data-fa="کنترل کیفیت">Quality Controlled</h3><p data-en="Production, packaging, and storage are monitored." data-fa="تولید، بسته‌بندی و نگهداری تحت نظارت است.">Production, packaging, and storage are monitored.</p></article>
+        <article class="feature reveal"><span>❤️</span><h3 data-en="Made with Love" data-fa="با عشق مامان">Made with Love</h3><p data-en="Inspired by grandmother recipes and Persian home cooking." data-fa="الهام‌گرفته از دستورهای مادربزرگ‌ها و آشپزی خانگی ایرانی.">Inspired by grandmother recipes and Persian home cooking.</p></article>
+      </div>
+    </section>
+
+    <section id="product" class="section product">
+      <div class="product-media reveal">
+        <video controls muted playsinline poster="assets/product-pack.jpeg">
+          <source src="assets/product-video.mp4" type="video/mp4">
+        </video>
+        <div class="gallery">
+          <img src="assets/product-pack.jpeg" alt="Vacuum packed frozen Persian Kotlet">
+          <img src="assets/mamapila-round-label.jpeg" alt="Mama Pila round label">
+          <img src="assets/label-old.png" alt="Persian Kotlet artwork label">
+        </div>
+      </div>
+      <div class="product-info reveal delay">
+        <p class="eyebrow orange" data-en="Featured Product" data-fa="محصول ویژه">Featured Product</p>
+        <h2 data-en="Persian Kotlet — Uncooked & Frozen" data-fa="کتلت ایرانی — خام و منجمد">Persian Kotlet — Uncooked & Frozen</h2>
+        <p data-en="A premium frozen Persian cutlet made with ground beef, potato, egg, herbs and spices. Pan-fry at home and enjoy the smell, texture, and flavour of traditional Iranian comfort food." data-fa="کتلت ایرانی منجمد و باکیفیت، تهیه‌شده از گوشت چرخ‌کرده، سیب‌زمینی، تخم‌مرغ، سبزیجات و ادویه‌های اصیل. در خانه سرخ کنید و از عطر، بافت و طعم غذای خانگی ایرانی لذت ببرید.">A premium frozen Persian cutlet made with ground beef, potato, egg, herbs and spices. Pan-fry at home and enjoy the smell, texture, and flavour of traditional Iranian comfort food.</p>
+        <div class="specs">
+          <div><b>15</b><span data-en="Pieces" data-fa="عدد">Pieces</span></div>
+          <div><b>600g</b><span data-en="Net Weight" data-fa="وزن خالص">Net Weight</span></div>
+          <div><b>0</b><span data-en="Preservatives" data-fa="نگهدارنده">Preservatives</span></div>
+        </div>
+        <h3 data-en="Ingredients" data-fa="مواد تشکیل‌دهنده">Ingredients</h3>
+        <p class="small" data-en="Ground beef, potato, egg, salt, pepper, garlic powder, bread crumbs, turmeric. Nutrition values are placeholders and can be updated before launch." data-fa="گوشت چرخ‌کرده، سیب‌زمینی، تخم‌مرغ، نمک، فلفل، پودر سیر، پودر سوخاری، زردچوبه. اطلاعات تغذیه فعلاً نمونه است و قبل از عرضه قابل تغییر است.">Ground beef, potato, egg, salt, pepper, garlic powder, bread crumbs, turmeric. Nutrition values are placeholders and can be updated before launch.</p>
+        <table class="nutrition">
+          <tr><th data-en="Nutrition Facts" data-fa="ارزش غذایی">Nutrition Facts</th><th data-en="Per 100g" data-fa="در ۱۰۰ گرم">Per 100g</th></tr>
+          <tr><td>Calories</td><td>210</td></tr><tr><td>Protein</td><td>14g</td></tr><tr><td>Fat</td><td>11g</td></tr><tr><td>Carbohydrate</td><td>13g</td></tr><tr><td>Sodium</td><td>390mg</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section retail">
+      <div class="center reveal">
+        <p class="eyebrow orange" data-en="Coming Soon" data-fa="به زودی">Coming Soon</p>
+        <h2 data-en="New Persian comfort foods are on the way." data-fa="محصولات جدید غذاهای خانگی ایرانی در راه است.">New Persian comfort foods are on the way.</h2>
+        <p data-en="Ask us about retail samples, wholesale opportunities, and future products." data-fa="برای نمونه فروشگاهی، همکاری عمده‌فروشی و محصولات آینده با ما تماس بگیرید.">Ask us about retail samples, wholesale opportunities, and future products.</p>
+      </div>
+    </section>
 
     <section id="contact" class="section contact">
-      <div class="reveal"><p class="eyebrow orange">Contact us</p><h2>Order, wholesale, or partnership inquiries.</h2><p>We are preparing Mama Pila for selected stores and direct customer requests.</p></div>
       <div class="contact-card reveal">
-        <a href="https://mamapila.ca">mamapila.ca</a><a href="mailto:order@mampila.ca">order@mampila.ca</a><a href="tel:+14372201612">437 220 1612</a><a href="tel:+16478327100">647 832 7100</a><p>102 Crockford Blvd, Unit #4, Toronto, ON</p>
-        <div class="socials"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">TikTok</a><a href="#">Facebook</a></div>
+        <p class="eyebrow orange" data-en="Contact Us" data-fa="تماس با ما">Contact Us</p>
+        <h2 data-en="Bring Mama Pila to your store, kitchen, or table." data-fa="ماماپیلا را به فروشگاه، آشپزخانه یا سفره خود بیاورید.">Bring Mama Pila to your store, kitchen, or table.</h2>
+        <div class="contact-lines">
+          <a href="https://mamapila.ca">mamapila.ca</a>
+          <a href="mailto:order@mampila.ca">order@mampila.ca</a>
+          <a href="tel:14372201612">437 220 1612</a>
+          <a href="tel:16478327100">647 832 7100</a>
+          <span>102 Crockford Blvd, Unit #4, Toronto, ON</span>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="LinkedIn">LinkedIn</a><a href="#" aria-label="TikTok">TikTok</a><a href="#" aria-label="Facebook">Facebook</a>
+        </div>
       </div>
+      <form class="form reveal delay" action="mailto:order@mampila.ca" method="post" enctype="text/plain">
+        <input name="name" placeholder="Name / نام" required>
+        <input name="email" placeholder="Email / ایمیل" required>
+        <input name="phone" placeholder="Phone / تلفن">
+        <textarea name="message" placeholder="Message / پیام" rows="5"></textarea>
+        <button class="btn primary" type="submit" data-en="Send Message" data-fa="ارسال پیام">Send Message</button>
+      </form>
     </section>
   </main>
-  <footer>© <span id="year"></span> Mama Pila. All rights reserved.</footer>
+
+  <a class="whatsapp" href="https://wa.me/14372201612" aria-label="WhatsApp">WhatsApp</a>
+  <footer><span>© 2026 Mama Pila</span><span>Made with love • با عشق مامان</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
