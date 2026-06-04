@@ -1,36 +1,41 @@
-# Mama Pila Website — V7
+# Mama Pila Website — V8 (separate English + Persian sites)
 
-## How to deploy (GitHub Pages)
-Upload the CONTENTS of this folder into your repository root (repo: farhaddpi/mamapila).
-Do NOT upload the zip file itself and do NOT upload a parent folder.
+## What's new in V8
+- TWO separate pages now:
+  - index.html → 100% English (left-to-right)
+  - fa.html    → 100% Persian / فارسی (right-to-left)
+- The EN / فارسی buttons in the top menu switch between the two pages.
+- All menu items and content are fully in one language on each page
+  (no more mixed English/Persian on the same page).
+- Mobile text sizes reduced so headings and paragraphs fit better on phones.
+- Center logo no longer overlaps the menu.
+- Package photo (hand removed, transparent) and the muted-with-soft-music
+  videos are reused, with graceful fallbacks if a file is missing.
 
-Files:
+## Files to upload (ALL of them, to the repo root: farhaddpi/mamapila)
 - index.html
+- fa.html
 - styles.css
 - script.js
 - README.md
-- assets/   (already filled with your real photos & videos)
+- assets/  (the WHOLE folder with all 7 media files)
 
-Live URL: https://farhaddpi.github.io/mamapila/
+## IMPORTANT — how to upload so images & videos show
+Last time the assets did not appear because the assets/ FOLDER was not uploaded.
+On GitHub:
+1. Extract this zip on your computer.
+2. Open github.com/farhaddpi/mamapila  →  Add file  →  Upload files.
+3. DRAG the whole `assets` folder into the upload box (do NOT click
+   "choose your files" — that only allows single files, not folders).
+   Also drag index.html, fa.html, styles.css, script.js, README.md.
+4. Wait until all files (especially the two .mp4 videos) finish, then Commit.
+5. Wait ~1 minute, then hard-refresh the site (Ctrl + Shift + R).
 
-## Assets included (your real media, processed)
-- logo-label.jpg / logo-label-small.jpg  — round Mama Pila label logo
-- product-pack-clean.png  — your package photo with the HAND REMOVED, background
-  cut out (transparent) so it floats cleanly on the site
-- video-poster.jpg / label-wide-small.jpg — appetizing frames from your videos
-- kotlet-video-1.mp4 / kotlet-video-2.mp4 — your cooking videos, original kitchen
-  sound REMOVED and a soft background music added instead, lightly color-enhanced
+Quick test link (should show the logo image, not a 404):
+https://farhaddpi.github.io/mamapila/assets/logo-label-small.jpg
 
-## What changed in V7
-- Used your real package photo and videos.
-- Removed the hand, fingers and watch from the package photo and cleaned the
-  background so the package looks like a professional product shot.
-- Muted the original video audio and added a gentle background music track.
-  (To use your own music instead, replace the audio of the two mp4 files.)
-- Added matching line icons to the feature strip for a more polished look.
-- Kept the Google Maps location section and the V6 bug fixes
-  (email order@mamapila.ca, "Mama Pila" spelling, language button, fallbacks).
+Home (English): https://farhaddpi.github.io/mamapila/
+Persian:        https://farhaddpi.github.io/mamapila/fa.html
 
-## Notes
-- If you ever want a different background music, send a track and it can be swapped.
-- Total assets size is about 9.5 MB (mostly the two videos).
+If the folder drag still won't work in your browser, GitHub Desktop or Git on
+your computer is the most reliable way to upload folders.

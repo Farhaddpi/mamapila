@@ -18,3 +18,47 @@ video.media-missing{background:linear-gradient(135deg,#355640,#081f15);min-heigh
 /* ---- Proof-strip feature icons (added) ---- */
 .proof-strip article{display:flex;flex-direction:column}
 .proof-strip .ico{width:34px;height:34px;display:block;fill:none;stroke:#0d3526;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:10px;opacity:.9}
+
+/* ===== V8 additions: separate EN/FA sites, RTL, mobile type ===== */
+.lang{display:inline-block}
+
+/* single-column story narrative */
+.story-grid.single{grid-template-columns:1fr;max-width:880px;margin:0 auto}
+
+/* Persian text always uses Vazirmatn (Playfair has no Persian glyphs) */
+[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] .hero h1,[dir=rtl] .section-title h2,
+[dir=rtl] .product-copy h2,[dir=rtl] .coming h2,[dir=rtl] .story-card h3{font-family:Vazirmatn,'Playfair Display',serif}
+[dir=rtl] body,[dir=rtl] .eyebrow,[dir=rtl] .lead,[dir=rtl] .btn,[dir=rtl] .proof-strip b,
+[dir=rtl] .proof-strip span,[dir=rtl] .facts span,[dir=rtl] .map-info p,[dir=rtl] .nav a{font-family:Vazirmatn,Inter,sans-serif}
+
+/* RTL desktop layout mirrors (desktop only, so mobile stacking stays intact) */
+@media(min-width:741px){
+  [dir=rtl] .hero-pack{right:auto;left:7vw}
+  [dir=rtl] .badge{right:auto;left:4vw}
+  [dir=rtl] .product-copy{padding:80px 40px 80px 7vw}
+  [dir=rtl] .proof-strip article{border-right:0;border-left:1px solid #b88d54}
+}
+
+/* Mobile: make type a bit smaller across the board */
+@media(max-width:740px){
+  .hero h1{font-size:38px;line-height:1.05}
+  .lead{font-size:16px;line-height:1.7}
+  .eyebrow{font-size:12.5px}
+  .section-title h2{font-size:30px}
+  .product-copy h2{font-size:34px}
+  .product-copy p,.product-copy li{font-size:15.5px;line-height:1.7}
+  .story-card{padding:26px}
+  .story-card h3{font-size:25px;margin-bottom:14px}
+  .story-card p{font-size:15px;line-height:1.85}
+  .proof-strip b{font-size:12px}
+  .proof-strip span{font-size:13px}
+  .facts strong{font-size:32px}
+  .map-info h3{font-size:26px}
+  .map-info p{font-size:16px}
+  .btn{padding:13px 20px;font-size:13px}
+  footer{padding:40px 24px}
+}
+
+/* center spacer so the round logo never overlaps the menu */
+.navgap{flex:0 0 210px}
+@media(max-width:740px){.navgap{display:none}}
