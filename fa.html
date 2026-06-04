@@ -20,9 +20,8 @@
   <header class="nav">
     <a class="social" href="#" aria-label="Instagram">◎</a><a class="social" href="#" aria-label="Facebook">f</a><a class="social" href="#" aria-label="TikTok">♪</a><a class="social" href="#" aria-label="LinkedIn">in</a>
     <nav>
-      <a href="#home">خانه</a><a href="#story">داستان ما</a><span class="navgap" aria-hidden="true"></span><a href="#product">محصولات</a><a href="#why">چرا ماما پیلا</a><a href="#contact">تماس با ما</a>
+      <a href="#home">خانه</a><a href="#story">داستان ما</a><span class="navgap"><a class="brand" href="#home"><img src="assets/logo-label-small.jpg" alt="لوگوی ماما پیلا"></a></span><a href="#product">محصولات</a><a href="#why">چرا ماما پیلا</a><a href="#gallery">گالری</a><a class="order-link" href="#order">سفارش</a><a href="#contact">تماس با ما</a>
     </nav>
-    <a class="brand" href="#home"><img src="assets/logo-label-small.jpg" alt="لوگوی ماما پیلا"></a>
     <a class="lang" href="index.html">EN</a><a class="lang active" href="fa.html">فارسی</a>
   </header>
 
@@ -73,9 +72,10 @@
       <div class="product-copy reveal">
         <p class="eyebrow">محصول ما</p>
         <h2>کتلت ایرانی</h2>
+        <p class="slogan">با عشق مامان · کسب‌وکار متعلق به زنان · بدون نگهدارنده</p>
         <p>گوشت چرخ‌کرده‌ی لطیف، ترکیب‌شده با سیب‌زمینی، تخم‌مرغ، سبزیجات و ادویه‌های ایرانی. خام، منجمد و آماده برای آشپزخانه‌ی شما.</p>
         <div class="facts">
-          <div><strong>۱۵</strong><span>عدد</span></div><div><strong>۶۰۰ گرم</strong><span>وزن خالص</span></div><div><strong>۰</strong><span>نگهدارنده</span></div>
+          <div><strong>۹</strong><span>عدد</span></div><div><strong>۴۰۰ گرم</strong><span>وزن خالص</span></div><div><strong>۰</strong><span>نگهدارنده</span></div>
         </div>
         <h3>طرز تهیه</h3>
         <ul><li>در تابه سرخ کنید تا طلایی و کاملاً پخته شود.</li><li>برای وعده‌ای سبک‌تر در ایرفرایر بپزید.</li><li>تا زمان پخت در فریزر نگه دارید.</li></ul>
@@ -90,9 +90,38 @@
       </div>
     </section>
 
+    <section class="gallery-section" id="gallery">
+      <div class="section-title reveal"><p>گالری</p><h2>از آشپزخانه‌ی ما</h2></div>
+      <div class="gallery-grid reveal">
+        <img src="assets/gallery1.jpg" alt="آشپزخانه‌ی صنعتی ماما پیلا" loading="lazy">
+        <img src="assets/gallery4.jpg" alt="شکل‌دادن کتلت" loading="lazy">
+        <img src="assets/gallery5.jpg" alt="کتلت خام تازه" loading="lazy">
+        <video class="g-video" autoplay muted loop playsinline preload="metadata" poster="assets/gallery7-poster.jpg"><source src="assets/gallery7.mp4" type="video/mp4"></video>
+        <img src="assets/gallery6.jpg" alt="کتلت طلایی سرخ‌شده" loading="lazy">
+        <img src="assets/gallery2.jpg" alt="کتلت در بشقاب" loading="lazy">
+        <img src="assets/gallery3.jpg" alt="کتلت آماده‌ی سرو" loading="lazy">
+        <img src="assets/gallery8.jpg" alt="صبحانه با کتلت" loading="lazy">
+        <img src="assets/gallery9.jpg" alt="سفره‌ی ایرانی با کتلت" loading="lazy">
+      </div>
+    </section>
+
     <section class="coming">
       <div class="reveal"><p class="eyebrow">به‌زودی</p><h2>غذاهای خانگی ایرانی بیشتر</h2><p>رؤیای ما این است که ماما پیلا را به خانه‌ای برای غذاهای خانگی و اصیل ایرانی در سراسر کانادا تبدیل کنیم.</p></div>
       <img class="reveal" src="assets/label-wide-small.jpg" alt="کتلت ایرانیِ تازه سرخ‌شده" loading="lazy">
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-card reveal">
+        <p class="eyebrow">سفارش</p>
+        <h2>سفارش ماما پیلا</h2>
+        <p>برای سفارش محصولات ما — به‌صورت تکی، عمده، برای ایونت‌ها و سفارش‌های شرکتی — با ما در تماس باشید. با افتخار میزبان خانواده و مهمان‌های شما هستیم.</p>
+        <div class="order-actions">
+          <a class="btn primary" href="tel:14372201612">تماس: ۴۳۷ ۲۲۰ ۱۶۱۲</a>
+          <a class="btn wa" href="https://wa.me/14372201612" target="_blank" rel="noopener">واتساپ</a>
+          <a class="btn ghost" href="mailto:order@mamapila.ca">order@mamapila.ca</a>
+        </div>
+        <p class="order-note">تکی · عمده · ایونت · شرکتی</p>
+      </div>
     </section>
 
     <section class="map-section">
@@ -111,6 +140,7 @@
   </main>
 
   <footer id="contact">
+    <div class="foot-brand"><img src="assets/wordmark-cream.png" alt="ماما پیلا"></div>
     <div><h3>سفارش و سؤالات</h3><p><a href="mailto:order@mamapila.ca">order@mamapila.ca</a></p><p><a href="tel:14372201612">۴۳۷ ۲۲۰ ۱۶۱۲</a> · <a href="tel:16478327100">۶۴۷ ۸۳۲ ۷۱۰۰</a></p></div>
     <div><h3>آدرس</h3><p>۱۰۲ کراکفورد بلوار، واحد ۴<br>تورنتو، انتاریو</p></div>
     <div><h3>ما را دنبال کنید</h3><p>اینستاگرام · فیسبوک · تیک‌تاک · لینکدین</p><p class="tagline">از خانواده‌ی ما به خانواده‌ی شما ❤️</p></div>
