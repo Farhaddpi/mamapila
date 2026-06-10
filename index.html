@@ -4,25 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mama Pila | Persian Kotlet Toronto</title>
-  <meta name="description" content="Mama Pila brings authentic homemade Persian kotlet to busy families across Canada. Ready-to-cook, frozen fresh, made with love in Toronto." />
+  <meta name="description" content="Mama Pila brings authentic homemade Persian kotlet to families across Canada. Ready-to-cook, frozen fresh, made with love in Toronto." />
   <meta name="theme-color" content="#0f3b2a" />
   <meta property="og:title" content="Mama Pila | Persian Kotlet" />
   <meta property="og:description" content="A Taste of Grandma’s Kitchen — authentic Persian homemade food, frozen fresh in Toronto." />
   <meta property="og:image" content="assets/logo-label.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/video-poster.jpg">
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css" />
+  <script>(function(){try{var p=new URLSearchParams(location.search).get('lang');var s=p||localStorage.getItem('mp_lang')||'en';if(s!=='fa')s='en';document.documentElement.lang=s;document.documentElement.dir=s==='fa'?'rtl':'ltr';}catch(e){}})();</script>
 </head>
 <body>
-  <div class="topbar"><span>Authentic Persian Taste, Made with Love in Canada</span><span>Toronto · Ontario · Canada</span></div>
+  <div class="topbar"><span data-i18n="tb1">Authentic Persian Taste, Made with Love in Canada</span><span data-i18n="tb2">Toronto · Ontario · Canada</span></div>
 
   <header class="nav">
-    <a class="social" href="#" aria-label="Instagram">◎</a><a class="social" href="#" aria-label="Facebook">f</a><a class="social" href="#" aria-label="TikTok">♪</a><a class="social" href="#" aria-label="LinkedIn">in</a>
+    <a class="social" href="https://instagram.com/mamapila.ca" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+    <a class="social" href="https://www.tiktok.com/@mamapila.ca" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v9.7a3.6 3.6 0 1 1-3.1-3.57"/><path d="M14 4.3c.5 2.2 2.1 3.8 4.3 4"/></svg></a>
     <nav>
-      <a href="#home">Home</a><a href="#story">Our Story</a><span class="navgap"><a class="brand" href="#home"><img src="assets/logo-label-small.jpg" alt="Mama Pila logo"></a></span><a href="#product">Products</a><a href="#why">Why Mama Pila</a><a href="#gallery">Gallery</a><a class="order-link" href="#order">Order</a><a href="#contact">Contact</a>
+      <a href="#home" data-i18n="nHome">Home</a><a href="#story" data-i18n="nStory">Our Story</a><span class="navgap"><a class="brand" href="#home" aria-label="Mama Pila"><img src="assets/logo-label-small.jpg" alt="Mama Pila logo" width="128" height="128"></a></span><a href="#product" data-i18n="nProd">Products</a><a href="#why" data-i18n="nWhy">Why Mama Pila</a><a href="#gallery" data-i18n="nGal">Gallery</a><a class="order-link" href="#order" data-i18n="nOrder">Order</a><a href="#contact" data-i18n="nContact">Contact</a>
     </nav>
-    <a class="lang active" href="index.html">EN</a><a class="lang" href="fa.html">فارسی</a>
+    <button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="fa">فارسی</button>
   </header>
 
   <main id="home">
@@ -32,120 +36,117 @@
       </video>
       <div class="shade"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">A Taste of Grandma’s Kitchen</p>
-        <h1><span>A Taste of</span><br>Grandma’s Kitchen</h1>
-        <p class="lead">Authentic Persian recipes made with the finest ingredients, proudly crafted in Canada with modern quality standards.</p>
-        <div class="actions"><a href="#story" class="btn primary">Our Story</a><a href="#product" class="btn ghost">Discover Products</a></div>
+        <p class="eyebrow" data-i18n="hEye">A Taste of Grandma’s Kitchen</p>
+        <h1 data-i18n="hH1"><span>A Taste of</span><br>Grandma’s Kitchen</h1>
+        <p class="lead" data-i18n="hLead">Authentic Persian recipes made with the finest ingredients, proudly crafted in Canada with modern quality standards.</p>
+        <div class="actions"><a href="#story" class="btn primary" data-i18n="hB1">Our Story</a><a href="#product" class="btn ghost" data-i18n="hB2">Discover Products</a></div>
       </div>
-      <img class="hero-pack reveal" src="assets/product-pack-clean.png" alt="Mama Pila Persian Kotlet package">
-      <div class="badge">NEW<br><strong>FROZEN</strong><br>FRESH</div>
+      <img class="hero-pack reveal" src="assets/product-pack-clean.png" alt="Mama Pila Persian Kotlet package" width="760" height="1052">
+      <div class="badge" data-i18n="hBadge">NEW<br><strong>FROZEN</strong><br>FRESH</div>
     </section>
 
     <section class="proof-strip" id="why">
-      <article><svg class="ico" viewBox="0 0 24 24"><path d="M5 18c9 2 15-4 15-14C9 4 3 11 5 18z"/><path d="M5 18C8 13 11 10 16 8"/></svg><b>Natural Ingredients</b><span>No preservatives</span></article>
-      <article><svg class="ico" viewBox="0 0 24 24"><path d="M3 9v6M6 7v10M18 7v10M21 9v6"/><path d="M6 12h12"/></svg><b>High in Protein</b><span>Good for you</span></article>
-      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 2v20M3.5 7l17 10M20.5 7l-17 10"/><path d="M9 4l3 2 3-2M9 20l3-2 3 2M4 10l-.5 3.4M20 10l.5 3.4"/></svg><b>Frozen Fresh</b><span>Lock in freshness</span></article>
-      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 20C6 15 4 11 6 8a3.6 3.6 0 016 0 3.6 3.6 0 016 0c2 3 0 7-6 12z"/></svg><b>Grandma’s Recipe</b><span>Authentic taste</span></article>
-      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 2l1.7 4.6 4.8-.9-1.4 4.4 4 1.5-3.6 2.7 1.1 3.6-4.2-1.4L12 22l-2.2-3.4-4.2 1.4 1.1-3.6L3.1 12l4-1.5L5.7 6l4.8.9z"/></svg><b>Made in Canada</b><span>Toronto, Ontario</span></article>
-      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.2-3 7.4-7 9-4-1.6-7-4.8-7-9V6z"/><path d="M8.8 12l2.2 2.2L15.4 10"/></svg><b>Quality Control</b><span>Every step matters</span></article>
+      <article><svg class="ico" viewBox="0 0 24 24"><path d="M5 18c9 2 15-4 15-14C9 4 3 11 5 18z"/><path d="M5 18C8 13 11 10 16 8"/></svg><b data-i18n="p1t">Natural Ingredients</b><span data-i18n="p1s">No preservatives</span></article>
+      <article><svg class="ico" viewBox="0 0 24 24"><path d="M3 9v6M6 7v10M18 7v10M21 9v6"/><path d="M6 12h12"/></svg><b data-i18n="p2t">High in Protein</b><span data-i18n="p2s">Good for you</span></article>
+      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 2v20M3.5 7l17 10M20.5 7l-17 10"/><path d="M9 4l3 2 3-2M9 20l3-2 3 2M4 10l-.5 3.4M20 10l.5 3.4"/></svg><b data-i18n="p3t">Frozen Fresh</b><span data-i18n="p3s">Lock in freshness</span></article>
+      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 20C6 15 4 11 6 8a3.6 3.6 0 016 0 3.6 3.6 0 016 0c2 3 0 7-6 12z"/></svg><b data-i18n="p4t">Grandma’s Recipe</b><span data-i18n="p4s">Authentic taste</span></article>
+      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 2l1.7 4.6 4.8-.9-1.4 4.4 4 1.5-3.6 2.7 1.1 3.6-4.2-1.4L12 22l-2.2-3.4-4.2 1.4 1.1-3.6L3.1 12l4-1.5L5.7 6l4.8.9z"/></svg><b data-i18n="p5t">Made in Canada</b><span data-i18n="p5s">Toronto, Ontario</span></article>
+      <article><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.2-3 7.4-7 9-4-1.6-7-4.8-7-9V6z"/><path d="M8.8 12l2.2 2.2L15.4 10"/></svg><b data-i18n="p6t">Quality Control</b><span data-i18n="p6s">Every step matters</span></article>
     </section>
 
     <section class="story-section" id="story">
-      <div class="section-title reveal"><p>Our Story</p><h2>A Legacy of Love &amp; Flavor</h2></div>
+      <div class="section-title reveal"><p data-i18n="sEye">Our Story</p><h2 data-i18n="sH2">A Legacy of Love &amp; Flavor</h2></div>
       <div class="story-grid single">
         <div class="story-card reveal">
-          <h3>Where Mama Pila Began</h3>
-          <p>Mama Pila began with a simple yet meaningful memory — one that many immigrants know well.</p>
-          <p>Years ago, we started a new chapter of our lives in Canada. Like many newcomers, our days quickly became filled with work, responsibilities, and busy schedules. Amid all the hustle, the thing we missed most was the comfort of homemade food and the taste of our mothers’ cooking.</p>
-          <p>Every summer, when our mothers came to visit, they would leave us with a special gift before returning home: freezer bags filled with homemade kotlets, lovingly prepared in our kitchens.</p>
-          <p>After they left, those kotlets became more than just a meal. On long, exhausting workdays, all it took was a few minutes in a pan or air fryer to fill our homes with the aroma of comfort, family, and cherished memories.</p>
-          <p>One day, we asked ourselves: why not share this feeling with others?</p>
-          <p>With love,<br><b>Marjan &amp; Sepideh</b></p>
+          <h3 data-i18n="sH3">Where Mama Pila Began</h3>
+          <p data-i18n="sP1">Mama Pila began with a simple yet meaningful memory — one that many immigrants know well.</p>
+          <p data-i18n="sP2">Years ago, we started a new chapter of our lives in Canada. Like many newcomers, our days quickly became filled with work, responsibilities, and busy schedules. Amid all the hustle, the thing we missed most was the comfort of homemade food and the taste of our mothers’ cooking.</p>
+          <p data-i18n="sP3">Every summer, when our mothers came to visit, they would leave us with a special gift before returning home: freezer bags filled with homemade kotlets, lovingly prepared in our kitchens.</p>
+          <p data-i18n="sP4">After they left, those kotlets became more than just a meal. On long, exhausting workdays, all it took was a few minutes in a pan or air fryer to fill our homes with the aroma of comfort, family, and cherished memories.</p>
+          <p data-i18n="sP5">One day, we asked ourselves: why not share this feeling with others?</p>
+          <p data-i18n="sSign">With love,<br><b>Marjan &amp; Sepideh</b></p>
         </div>
       </div>
     </section>
 
     <section class="product-section" id="product">
       <div class="product-media reveal">
-        <img src="assets/product-pack-clean.png" alt="Persian Kotlet package" loading="lazy">
+        <img src="assets/product-pack-clean.png" alt="Persian Kotlet package" width="760" height="1052" loading="lazy">
       </div>
       <div class="product-copy reveal">
-        <p class="eyebrow">Our Product</p>
-        <h2>Persian Kotlet</h2>
-        <p class="slogan">Made with love · Women-owned business · No preservatives</p>
-        <p>Tender ground beef blended with potato, egg, herbs and Persian spices. Uncooked, frozen, and ready for your kitchen.</p>
+        <p class="eyebrow" data-i18n="prEye">Our Product</p>
+        <h2 data-i18n="prH2">Persian Kotlet</h2>
+        <p class="slogan" data-i18n="prSlogan">Made with love · Women-owned business · No preservatives</p>
+        <p data-i18n="prDesc">Tender ground beef blended with potato, egg, herbs and Persian spices. Uncooked, frozen, and ready for your kitchen.</p>
         <div class="facts">
-          <div><strong>9</strong><span>Pieces</span></div><div><strong>400g</strong><span>Net Weight</span></div><div><strong>0</strong><span>Preservatives</span></div>
+          <div><strong data-i18n="prF1n">9</strong><span data-i18n="prF1l">Pieces</span></div><div><strong data-i18n="prF2n">400g</strong><span data-i18n="prF2l">Net Weight</span></div><div><strong data-i18n="prF3n">0</strong><span data-i18n="prF3l">Preservatives</span></div>
         </div>
-        <h3>Cooking</h3>
-        <ul><li>Pan fry until golden and fully cooked.</li><li>Air fry for a lighter, quicker meal.</li><li>Keep frozen until ready to cook.</li></ul>
+        <h3 data-i18n="prCook">Cooking</h3>
+        <ul><li data-i18n="prC1">Pan fry until golden and fully cooked.</li><li data-i18n="prC2">Air fry for a lighter, quicker meal.</li><li data-i18n="prC3">Keep frozen until ready to cook.</li></ul>
       </div>
     </section>
 
     <section class="video-section">
-      <div class="section-title reveal"><p>Real Product Videos</p><h2>From Freezer to Table</h2></div>
+      <div class="section-title reveal"><p data-i18n="vEye">Real Product Videos</p><h2 data-i18n="vH2">From Freezer to Table</h2></div>
       <div class="video-grid">
-        <video controls playsinline preload="metadata" poster="assets/video-poster.jpg"><source src="assets/kotlet-video-1.mp4" type="video/mp4"></video>
-        <video controls playsinline preload="metadata" poster="assets/label-wide-small.jpg"><source src="assets/kotlet-video-2.mp4" type="video/mp4"></video>
+        <video controls playsinline preload="none" poster="assets/video-poster.jpg"><source src="assets/kotlet-video-1.mp4" type="video/mp4"></video>
+        <video controls playsinline preload="none" poster="assets/label-wide-small.jpg"><source src="assets/kotlet-video-2.mp4" type="video/mp4"></video>
       </div>
     </section>
 
     <section class="gallery-section" id="gallery">
-      <div class="section-title reveal"><p>Gallery</p><h2>From Our Kitchen</h2></div>
+      <div class="section-title reveal"><p data-i18n="gEye">Gallery</p><h2 data-i18n="gH2">From Our Kitchen</h2></div>
       <div class="gallery-grid reveal">
-        <img src="assets/gallery1.jpg" alt="Mama Pila commercial kitchen" loading="lazy">
-        <img src="assets/gallery4.jpg" alt="Shaping the kotlet" loading="lazy">
-        <img src="assets/gallery5.jpg" alt="Fresh kotlet patty" loading="lazy">
-        <video class="g-video" autoplay muted loop playsinline preload="metadata" poster="assets/gallery7-poster.jpg"><source src="assets/gallery7.mp4" type="video/mp4"></video>
-        <img src="assets/gallery6.jpg" alt="Golden cooked kotlet" loading="lazy">
-        <img src="assets/gallery2.jpg" alt="Kotlet on a plate" loading="lazy">
-        <img src="assets/gallery3.jpg" alt="Kotlet ready to serve" loading="lazy">
-        <img src="assets/gallery8.jpg" alt="Kotlet breakfast" loading="lazy">
-        <img src="assets/gallery9.jpg" alt="Persian meal with kotlet" loading="lazy">
+        <img src="assets/gallery1.jpg" alt="Mama Pila kotlet platter" width="862" height="1080" loading="lazy">
+        <img src="assets/gallery2.jpg" alt="Persian kotlet served" width="862" height="1080" loading="lazy">
+        <img src="assets/gallery3.jpg" alt="Kotlet with herbs and pickles" width="862" height="1080" loading="lazy">
+        <img src="assets/gallery4.jpg" alt="Freshly fried kotlet" width="871" height="1080" loading="lazy">
+        <img src="assets/gallery5.jpg" alt="Fresh ingredients and spices" width="1080" height="810" loading="lazy">
+        <img src="assets/gallery6.jpg" alt="Our commercial kitchen" width="1080" height="608" loading="lazy">
+        <img src="assets/gallery7.jpg" alt="Our commercial kitchen" width="1080" height="608" loading="lazy">
       </div>
-    </section>
-
-    <section class="coming">
-      <div class="reveal"><p class="eyebrow">Coming Soon</p><h2>More Persian Homemade Favorites</h2><p>Our vision is to grow Mama Pila into a home for authentic Persian homemade foods across Canada.</p></div>
-      <img class="reveal" src="assets/label-wide-small.jpg" alt="Freshly cooked Persian kotlet" loading="lazy">
     </section>
 
     <section class="order-section" id="order">
       <div class="order-card reveal">
-        <p class="eyebrow">Order</p>
-        <h2>Order Mama Pila</h2>
-        <p>To order our products — retail, wholesale, events or corporate — please get in touch. We would love to feed your family and your guests.</p>
+        <p class="eyebrow" data-i18n="oEye">Order</p>
+        <h2 data-i18n="oH2">Order Mama Pila</h2>
+        <p data-i18n="oP">To order our products — retail, wholesale, events or corporate — please get in touch. We would love to feed your family and your guests.</p>
         <div class="order-actions">
-          <a class="btn primary" href="tel:14372201612">Call 437 220 1612</a>
-          <a class="btn wa" href="https://wa.me/14372201612" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn primary" href="tel:16478327100" data-i18n="oCall">Call 647 832 7100</a>
+          <a class="btn wa" href="https://wa.me/16478327100" target="_blank" rel="noopener" data-i18n="oWa">WhatsApp</a>
           <a class="btn ghost" href="mailto:order@mamapila.ca">order@mamapila.ca</a>
         </div>
-        <p class="order-note">Retail · Wholesale · Events · Corporate</p>
+        <p class="order-note" data-i18n="oNote">Retail · Wholesale · Events · Corporate</p>
       </div>
     </section>
 
+    <section class="coming">
+      <div class="reveal"><p class="eyebrow" data-i18n="cEye">Coming Soon</p><h2 data-i18n="cH2">More Persian Homemade Favorites</h2><p data-i18n="cP">Our vision is to grow Mama Pila into a home for authentic Persian homemade foods across Canada.</p></div>
+      <img class="reveal" src="assets/label-wide-small.jpg" alt="Freshly cooked Persian kotlet" width="1100" height="619" loading="lazy">
+    </section>
+
     <section class="map-section">
-      <div class="section-title reveal"><p>Find Us</p><h2>Visit Our Kitchen</h2></div>
+      <div class="section-title reveal"><p data-i18n="mEye">Find Us</p><h2 data-i18n="mH2">Visit Our Kitchen</h2></div>
       <div class="map-wrap reveal">
-        <iframe title="Mama Pila location map"
-          src="https://maps.google.com/maps?q=102%20Crockford%20Blvd%2C%20Toronto%2C%20ON&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <iframe title="Mama Pila location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+          src="https://maps.google.com/maps?q=102%20Crockford%20Blvd%2C%20Toronto%2C%20ON&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
         <div class="map-info">
-          <h3>Mama Pila</h3>
-          <p>102 Crockford Blvd, Unit #4<br>Toronto, ON</p>
-          <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=102+Crockford+Blvd+Unit+4+Toronto+ON" target="_blank" rel="noopener">Get Directions</a>
+          <h3 data-i18n="mName">Mama Pila</h3>
+          <p data-i18n="mAddr">102 Crockford Blvd, Unit #4<br>Toronto, ON</p>
+          <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=102+Crockford+Blvd+Unit+4+Toronto+ON" target="_blank" rel="noopener" data-i18n="mDir">Get Directions</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer id="contact">
-    <div class="foot-brand"><img src="assets/wordmark-cream.png" alt="Mama Pila"></div>
-    <div><h3>Order &amp; Inquiries</h3><p><a href="mailto:order@mamapila.ca">order@mamapila.ca</a></p><p><a href="tel:14372201612">437 220 1612</a> · <a href="tel:16478327100">647 832 7100</a></p></div>
-    <div><h3>Address</h3><p>102 Crockford Blvd, Unit #4<br>Toronto, ON</p></div>
-    <div><h3>Follow Us</h3><p>Instagram · Facebook · TikTok · LinkedIn</p><p class="tagline">From Our Family To Yours ❤️</p></div>
+    <div class="foot-brand"><img src="assets/wordmark-cream.png" alt="Mama Pila" width="220" height="43"></div>
+    <div><h3 data-i18n="fOrderH">Order &amp; Inquiries</h3><p><a href="mailto:order@mamapila.ca">order@mamapila.ca</a></p><p><a href="tel:16478327100" data-i18n="fPhone">647 832 7100</a></p></div>
+    <div><h3 data-i18n="fAddrH">Address</h3><p data-i18n="fAddr">102 Crockford Blvd, Unit #4<br>Toronto, ON</p></div>
+    <div><h3 data-i18n="fFollowH">Follow Us</h3><p><a href="https://instagram.com/mamapila.ca" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@mamapila.ca" target="_blank" rel="noopener">TikTok</a></p><p>@mamapila.ca</p><p class="tagline" data-i18n="fTag">From Our Family To Yours ❤️</p></div>
   </footer>
-  <a class="whatsapp" href="https://wa.me/14372201612" aria-label="WhatsApp">☎</a>
+  <a class="whatsapp" href="https://wa.me/16478327100" target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
   <script src="script.js"></script>
 </body>
 </html>

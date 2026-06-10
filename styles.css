@@ -140,3 +140,13 @@ video.media-missing{background:linear-gradient(135deg,#355640,#081f15);min-heigh
   .navgap{display:contents}
   .brand{position:static;transform:none;left:auto;top:auto;width:44px;height:44px;margin:0 8px;flex:0 0 auto;border-width:2px}
 }
+
+/* ===== V10: single-site language buttons + social icons ===== */
+.lang{background:none;border:0;cursor:pointer;font-family:inherit}
+.social{display:inline-flex;align-items:center;justify-content:center}
+.social svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block}
+.gallery-grid img{cursor:zoom-in;transition:transform .35s ease}
+.gallery-grid img:hover{transform:scale(1.03)}
+
+/* V10 fix: keep gallery tiles square (override the width/height attribute hint) */
+.gallery-grid img,.gallery-grid .g-video{height:auto;aspect-ratio:1/1;object-fit:cover}
